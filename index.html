@@ -26,8 +26,32 @@
                 </ul>
             </nav>
             <ul class="user-menu">
-                <li><a href=#>Поиск</a></li>
-                <li><a href=#>Вход</a></li>
+                <li><a href=#>Поиск</a>
+                    <ul class="popup search-popup">
+                        <li>
+                            <form method="post" action="https://echo.htmlacademy.ru">
+                                <label for="search" class="visually-hidden">Что вы ищите</label>
+                                <input type="search" placeholder="Что ищем?" id="search">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=#>Вход</a>
+                    <ul class="popup enter-popup">
+                        <li>
+                            <form method="post" action="https://echo.htmlacademy.ru">
+                                <label for="login" class="visually-hidden">Ваша почта</label>
+                                <input type="email" name="email" placeholder="Электронная почта" id="login">
+                                <label for="password" class="visually-hidden">Ваш пароль</label>
+                                <input type="password" name="password" placeholder="Пароль" id="password">
+                                <button class="btn enter-popup-btn">Войти</button>
+                            </form>
+                            <a href="#" class="enter-popup-password">Забыли пароль?</a>
+                            <a href="#" class="enter-popup-new">Новая регистрация</a>
+                        </li>    
+                    </ul>
+                </li>
                 <li><a href=#>Пусто</a></li>
             </ul>
             <div class="header-contacts">
@@ -113,6 +137,9 @@
                 </article>
                 <aside class="subscribe">
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                    <label for="subscribe-form" class="visually-hidden">Наша рассылка</label>
+                    <input type="email" name="subscribe-form" id="subscribe-form" placeholder="Электронная почта">
+                    <button class="btn subscribe-btn">Отправить</button>
                 </aside>
             </div>
             <section class="contacts">
@@ -145,27 +172,15 @@
                 <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
             </div>
         </footer>
-        <div class="popup search-popup">
-            <form method="post" action="https://echo.htmlacademy.ru">
-                <input type="search" placeholder="Что ищем?">
-            </form>
-        </div>
-        <div class="popup enter-popup">
-            <form method="post" action="https://echo.htmlacademy.ru">
-                <input type="email" name="email">
-                <input type="password" name="password">
-                <button class="btn enter-popup-btn">Войти</button>
-            </form>
-            <a href="#" class="enter-popup-password">Забыли пароль?</a>
-            <a href="#" class="enter-popup-new">Новая регистрация</a>
-        </div>
         <div class="popup write-us-popup">
             <h2>Мы обязательно вам ответим!</h2>
             <button class="close-btn">Закрыть</button>
             <form method="post" action="https://echo.htmlacademy.ru">
-                <input type="text" name="name" placeholder="Как вас зовут?">
-                <input type="email" name="write-us-email" placeholder="Ваша почта для ответа?">
-                <textarea>Напишите что-нибудь...</textarea>
+                <label for="name" class="visually-hidden">Ваше имя</label>
+                <input type="text" name="name" placeholder="Как вас зовут?" id="name">
+                <label for="email" class="visually-hidden">Ваше почта</label>
+                <input type="email" name="write-us-email" placeholder="Ваша почта для ответа?" id="email">
+                <textarea name="user-text" placeholder="Напишите что-нибудь..."></textarea>
                 <button class="btn send-btn">Отправить</button>
             </form>
         </div>
