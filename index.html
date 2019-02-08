@@ -27,30 +27,26 @@
             </nav>
             <ul class="user-menu">
                 <li><a href=#>Поиск</a>
-                    <ul class="popup search-popup">
-                        <li>
-                            <form method="post" action="https://echo.htmlacademy.ru">
-                                <label for="search" class="visually-hidden">Что вы ищите</label>
-                                <input type="search" placeholder="Что ищем?" id="search">
-                            </form>
-                        </li>
-                    </ul>
+                    <div class="popup search-popup">
+                        <form method="post" action="https://echo.htmlacademy.ru">
+                            <label for="search" class="visually-hidden">Что вы ищите</label>
+                            <input type="search" placeholder="Что ищем?" id="search">
+                        </form>
+                    </div>
                 </li>
                 <li>
                     <a href=#>Вход</a>
-                    <ul class="popup enter-popup">
-                        <li>
-                            <form method="post" action="https://echo.htmlacademy.ru">
-                                <label for="login" class="visually-hidden">Ваша почта</label>
-                                <input type="email" name="email" placeholder="Электронная почта" id="login">
-                                <label for="password" class="visually-hidden">Ваш пароль</label>
-                                <input type="password" name="password" placeholder="Пароль" id="password">
-                                <button class="btn enter-popup-btn">Войти</button>
-                            </form>
-                            <a href="#" class="enter-popup-password">Забыли пароль?</a>
-                            <a href="#" class="enter-popup-new">Новая регистрация</a>
-                        </li>    
-                    </ul>
+                    <div class="popup enter-popup">
+                        <form method="post" action="https://echo.htmlacademy.ru">
+                            <label for="login" class="visually-hidden">Ваша почта</label>
+                            <input type="email" name="email" placeholder="Электронная почта" id="login">
+                            <label for="password" class="visually-hidden">Ваш пароль</label>
+                            <input type="password" name="password" placeholder="Пароль" id="password">
+                            <button class="btn enter-popup-btn">Войти</button>
+                        </form>
+                        <a href="#" class="enter-popup-password">Забыли пароль?</a>
+                        <a href="#" class="enter-popup-new">Новая регистрация</a>   
+                    </div>
                 </li>
                 <li><a href=#>Пусто</a></li>
             </ul>
