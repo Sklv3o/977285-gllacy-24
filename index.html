@@ -3,6 +3,9 @@
     <head>    
         <meta charset="utf-8">
         <title>Магазин Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/Normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -28,7 +31,7 @@
             <ul class="user-menu">
                 <li><a href=#>Поиск</a>
                     <div class="popup search-popup">
-                        <form method="post" action="https://echo.htmlacademy.ru">
+                        <form method="get" action="https://echo.htmlacademy.ru">
                             <label for="search" class="visually-hidden">Что вы ищите</label>
                             <input type="search" placeholder="Что ищем?" id="search">
                         </form>
@@ -89,7 +92,7 @@
                 </ul>
             </section>
             <section class="hits">
-                <h2>Наши хиты</h2>
+                <h2 class="visually-hidden">Наши хиты</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <img src="img/catalog-creamy-with-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -118,6 +121,7 @@
                 </ul>
             </section>
             <section class="about">
+                <h2 class="visually-hidden">О нас</h2>
                 <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
                 <ul>
                     <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -143,7 +147,7 @@
                 <img src="img/map.jpg" width="1250" height="430" alt="Карта проезда">
                 <div class="address">
                     <p>Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-                    <p>Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
+                    <p>Для заказов по телефону: <a href="tel:+78124502525" class="adress-phone">8 812 450-25-25</a><span class="call-time"> (с 10 до 20 ежедневно)</span></p>
                     <a href="#" class="btn adress-btn">Форма обратной связи</a>
                 </div>
             </section>

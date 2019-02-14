@@ -1,5 +1,228 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #849d8f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn {
   background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   opacity: 0.988;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main-menu a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    background-color: #f7f6f3;
+    color: #323232;
+}
+
+.main-menu-catalog-item a {
+    color: #323232;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #f8f7f4;
+}
+
+.main-menu-catalog-item a:hover,
+.main-menu-catalog-item a:focus {
+    background-color: #fbded7;
+}
+
+.main-menu-catalog-item a:active {
+    background-color: #f6b5a5;
+}
+
+.user-menu a {
+    background-color: #9db1a5;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.worktime {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.header-contacts a {
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.gift-list,
+.user-menu,
+.catalog-list,
+.about ul,
+.social-btn,
+.footer-menu,
+.pagination,
+.breadcrumbs {
+    list-style: none;
+}
+
+.gift-list h3 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
+.gift-raspberry {
+    background-color: #d3173c;
+    background-image: url("../img/bg-gift-raspberry.jpg");
+    background-repeat: no-repeat;
+}
+
+.gift-chocolate {
+    background-color: #69462f;
+    background-image: url("../img/bg-gift-chocolate.jpg");
+    background-repeat: no-repeat;
+}
+
+.catalog-item p:nth-child(2) {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.catalog-item span {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.about {
+    background-color: #ede2cb;
+    background-image: url("../img/bg-waffle.jpg");
+    background-repeat: no-repeat;
+}
+
+.about p {
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.about li {
+    color: #323232;
+}
+
+.blog {
+    background-color: #ffffff;
+    background-image: url("../img/bg-blog-table-setting.jpg");
+    background-repeat: no-repeat;
+}
+
+.blog p {
+    color: #323232;
+}
+
+.blog a {
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.subscribe {
+    background-color: #f8f7f4;
+    background-image: url("../img/bg-post.jpg");
+    background-repeat: no-repeat;
+}
+
+.subscribe p {
+    color: #5a5a5a;
+}
+
+.address {
+    background-color: #fffffe;
+}
+
+.address p {
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.address span {
+    color: #323232;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.address .adress-phone {
+    color: #323232;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.address .call-time {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-menu a:first-child {
+    font-weight: 700;
+}
+
+.htmlacademy-info a {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.creamy-header {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
 }
