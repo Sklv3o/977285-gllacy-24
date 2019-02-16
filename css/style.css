@@ -13,7 +13,8 @@ a {
     color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden,
+.popup {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -41,7 +42,7 @@ a {
 
 .btn:focus,
 .btn:hover {
-    background-image: linear-gradient( 90deg, rgba(231,74,53,0.2) 0%, rgba(242,104,67,0.2) 100%);
+    background-image: linear-gradient( 90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 100%), linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%); 
 }
 
 
@@ -59,6 +60,10 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
 }
 
 .main-menu a:hover,
@@ -137,10 +142,13 @@ a {
 }
 
 .catalog-item-name {
-    text-decoration: underline;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
 }
 
 .catalog-item-name:hover,
@@ -237,6 +245,10 @@ a {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
 }
 
 .footer-menu a:hover,
@@ -249,15 +261,24 @@ a {
     font-weight: 700;
 }
 
-.htmlacademy-info a {
+.htmlacademy {
     font-size: 12px;
     line-height: 18px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
 }
 
 .htmlacademy-info a:hover,
 .htmlacademy-info a:focus,
 .htmlacademy-info a:active {
     color:#ffbc9e;
+}
+
+.htmlacademy-info p {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .breadcrumbs a {
@@ -275,4 +296,41 @@ a {
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
+}
+
+.fieldset {
+    border: 0px;
+}
+
+.fieldset legend,
+.fieldset .sort {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.fieldset option {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.fieldset label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.fieldset fieldset {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-sort-btn {
+    padding: 0;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
 }

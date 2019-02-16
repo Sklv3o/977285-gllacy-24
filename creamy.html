@@ -16,7 +16,7 @@
                 <ul class="main-menu">
                     <li>
                         <a href="#">Каталог</a>
-                        <ul class="main-menu-catalog-item">
+                        <ul class="main-menu-catalog-item popup">
                             <li><a href="#">Новинки</a></li>
                             <li><a href="creamy.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
@@ -40,7 +40,7 @@
                 <li><a href=#>Вход</a></li>
                 <li>
                     <a href=#>Пусто</a>
-                    <div class="basket-popup">
+                    <div class="popup basket-popup">
                         <ul>
                             <li>
                                 <a href="#" class="basket-popup-delete">Удалить</a>
@@ -75,21 +75,21 @@
             </ul>
             <h1 class="creamy-header">Сливочное мороженое</h1>
             <section class="catalog-sort">
-                <form method="post" action="https://echo.htmlacademy.ru">
-                    <fieldset>
-                        <label for="sort">Сортировка:</label>
+                <form method="post" action="https://echo.htmlacademy.ru" class="form">
+                    <fieldset class="fieldset">
+                        <label for="sort" class="sort">Сортировка:</label>
                         <select name="sort" id="sort">
                             <option value="popular">по популярности</option>
                             <option value="cheap">сначала недорогие</option>
                             <option value="expensive">сначала дорогие</option>
                             <option value="fat">по жирности</option>
                         </select>
-                        <fieldset>
+                        <fieldset class="fieldset">
                             <legend>Цена: 100 руб. – 500 руб.</legend>
                             <button class="range"></button>
                             <button class="range"></button>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="fieldset">
                             <legend>Жирность:</legend>
                             <input type="radio" name="fat" value="0" id="0">
                             <label for="0">0%</label>
@@ -101,8 +101,8 @@
                             <label for="30-and-more">выше 30%</label>
                         </fieldset>
                     </fieldset>
-                    <fieldset>
-                        <fieldset>
+                    <fieldset class="fieldset">
+                        <fieldset class="fieldset">
                             <legend>Наполнители:</legend>
                             <input type="checkbox" name="chocolate" id="chocolate" checked>
                             <label for="chocolate">шоколадные</label>
@@ -115,7 +115,7 @@
                             <input type="checkbox" name="jams" id="jams">
                             <label for="jams">джемы</label>
                         </fieldset>
-                        <button class="catalog-sort-btn">Применить</button>
+                        <button class="catalog-sort-btn" class="send-form-btn">Применить</button>
                     </fieldset>
                 </form>
             </section>
@@ -221,7 +221,8 @@
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="img/logo-htmlacademy.svg" alt="HTML academy" width="108" height="39">
                 </a>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
+                <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">HTML Academy</a> © 2019
+                </p>
             </div>
         </footer>
     </body>
