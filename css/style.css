@@ -7,6 +7,7 @@ body {
     color: #ffffff;
     background-color: #849d8f;
     min-width: 1200px;
+    letter-spacing: normal;
 }
 
 a {
@@ -68,27 +69,47 @@ a {
 .main-menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 27px;
 }
 
 .user-menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 27px;
 }
 
 .logo {
     margin-top: 10px;
+    margin-right: 23px;
 }
 
 .header-contacts {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.worktime {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.header-contacts a {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
 }
 
 .main-menu li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main-menu a {
@@ -101,10 +122,22 @@ a {
     background-size: 100% 2px;
 }
 
+.main-menu a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.main-menu a:nth-child(2) {
+    margin-right: 11px;
+}
+
 .main-menu a:hover,
 .main-menu a:focus {
     background-color: #f7f6f3;
     color: #323232;
+}
+
+.main-menu-catalog-item {
+    padding: 0;
 }
 
 .main-menu-catalog-item a {
@@ -131,15 +164,22 @@ a {
     font-weight: 500;
 }
 
-.worktime {
-    font-size: 14px;
-    line-height: 16px;
+.header-basket {
+    padding-left: 45px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    margin-left: 10px;
 }
 
-.header-contacts a {
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 700;
+.header-enter-btn {
+    padding-left: 45px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    margin-left: 10px;
 }
 
 .gift-list,
@@ -184,10 +224,10 @@ a {
 
 .slider {
     position: relative;
-    padding-top: 321px;
+    padding-top: 271px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .slider-list {
@@ -203,7 +243,7 @@ a {
 .slide-title {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
@@ -211,7 +251,7 @@ a {
 
 .button {
     display: inline-block;
-    padding: 12px 44px;
+    padding: 12px 40px;
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
@@ -240,7 +280,7 @@ a {
 
 .slider-controls {
     position: absolute;
-    bottom: 63px;
+    bottom: 21px;
     left: 0;
     z-index: 20;
     font-size: 0;
@@ -290,7 +330,7 @@ a {
     margin: 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
@@ -309,8 +349,11 @@ a {
     padding: 0;
     margin: 0;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
 }
 
 .gift-item p {
@@ -318,14 +361,19 @@ a {
     margin: 0;
     margin-left: 20px;
     margin-bottom: 40px;
-    margin-right: 25px;
+    margin-right: 5px;
     font-weight: 700;
     font-size: 18px;
 }
 
+.gift-raspberry p {
+    margin-right: 15px;
+    margin-bottom: 45px;
+}
+
 .gift-btn {
     width: 165px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     align-self: flex-end;
     margin-right: 20px;
     vertical-align: middle;
@@ -335,12 +383,13 @@ a {
     line-height: 24px;
 }
 
-.gift-list h3 {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: 700;
+.gift-chocolate p {
+    margin-bottom: 45px;
 }
 
+.gift-chocolate .gift-btn {
+    width: 190px;
+}
 
 .gift-raspberry {
     background-color: #d3173c;
@@ -371,7 +420,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 35px; 
+    margin-bottom: 37px; 
 }
 
 .catalog-item {
@@ -385,6 +434,7 @@ a {
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: absolute;
 }
 
 .catalog-item img {
@@ -394,7 +444,7 @@ a {
 .catalog-item p {
     position: absolute;
     align-self: flex-start;
-    margin-top: 215px;
+    margin-top: 210px;
 }
 
 .catalog-item p:nth-child(2) {
@@ -409,7 +459,7 @@ a {
     line-height: 22px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 15px;
+    
 }
 
 .catalog-item-name:hover,
@@ -425,10 +475,9 @@ a {
 
 .about {
     display: flex;
-    justify-content: space-between;
     border-radius: 15px;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     background-color: #ede2cb;
     background-image: url("../img/bg-waffle.jpg");
     background-repeat: no-repeat;
@@ -442,8 +491,16 @@ a {
 }
 
 .about-list li {
-    width: 540px;
-    margin-bottom: 30px;
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    margin-bottom: 23px;
+    padding-left: 75px;
+    width: 495px;
+}
+
+.about-list li:nth-child(4) {
+    margin-right: 5px;
 }
 
 .about p {
@@ -454,18 +511,14 @@ a {
     line-height: 30px;
     font-weight: 500;
     margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.about li {
-    color: #323232;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .blog-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .blog,
@@ -483,9 +536,12 @@ a {
 }
 
 .blog p {
+    margin: 0;
+    padding: 0;
     color: #323232;
-    margin-left: 15px;
+    margin-left: 19px;
     margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 .blog a {
@@ -494,8 +550,8 @@ a {
     line-height: 30px;
     font-weight: 700;
     width: 295px;
-    margin-left:  15px;
-    margin-bottom: 70px;
+    margin-left:  19px;
+    margin-bottom: 80px;
 }
 
 .blog a:hover,
@@ -503,7 +559,6 @@ a {
 .blog a:active {
     color:#e84d37;
 }
-
 
 .subscribe {
     background-color: #f8f7f4;
@@ -515,7 +570,7 @@ a {
     color: #5a5a5a;
     margin-top: 35px;
     margin-bottom: 40px;
-    margin-left: 25px;
+    margin-left: 26px;
     margin-right: 10px;
 }
  
@@ -542,11 +597,11 @@ a {
 }
 
 .address {
-    width: 304px;
+    width: 302px;
     border-radius: 10px;
     position: absolute;
-    margin-top: 65px;
-    margin-left: 870px;
+    margin-top: 63px;
+    margin-left: 872px;
     background-color: #fffffe;
     display: flex;
     flex-direction: column;
@@ -563,12 +618,12 @@ a {
 }
 
 .address p:first-child {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 28px;
+    margin-bottom: 3px;
 }
 
 .address p:nth-child(2) {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
 }
 
 .address p:nth-child(3) {
@@ -577,7 +632,7 @@ a {
 
 .address p:nth-child(3),
 .address p:nth-child(4){
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .address p:nth-child(5) {
@@ -605,9 +660,11 @@ a {
 }
 
 .address .adress-btn {
+    margin: 0;
+    padding: 0;
     width: 250px;
     align-self: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -660,7 +717,7 @@ a {
 }
 
 .htmlacademy-info {
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .main-footer .social-btn {
@@ -668,21 +725,27 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 35px;
+    margin-right: 86px;
 }
 
 .main-footer .footer-menu {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 35px;
+    margin-top: 32px;
     flex-wrap: wrap;
-    width: 350px;
 }
 
 .footer-menu li {
-    width: 155px;
-    margin-right: 10px;
+    margin: 0;
+    padding: 0;
 }
+
+.footer-menu li:nth-child(2) {
+    margin-left: 20px;
+}
+
+
 
 .breadcrumbs {
     display: flex;
