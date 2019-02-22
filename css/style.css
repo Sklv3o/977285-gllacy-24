@@ -435,6 +435,8 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
+    margin-top: 333px;
+    opacity: 0;
 }
 
 .catalog-item img {
@@ -472,6 +474,23 @@ a {
     font-size: 30px;
     line-height: 45px;
 }
+
+.catalog-item:hover,
+.catalog-item:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.catalog-item:hover .catalog-btn,
+.catalog-item:focus .catalog-btn {
+    opacity: 1;
+}
+
+.catalog-item:hover img,
+.catalog-item:focus img {
+    margin-bottom: 9px;
+}
+
 
 .about {
     display: flex;
@@ -592,8 +611,16 @@ a {
     border-radius: 5px;
 }
 
+.contacts {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
 .contacts img {
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .address {
@@ -820,11 +847,6 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.contacts {
-    display: flex;
-    width: 1200px;
-    margin: auto;
-}
 
 .pagination {
     display: flex;
