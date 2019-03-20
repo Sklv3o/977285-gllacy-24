@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid red;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -65,6 +69,10 @@ a {
     padding: 5px 10px;
     margin-top: 24px;
     margin-right: 8px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 15px) 2px;
 }
 
 .main-menu-item .activ-page {
@@ -102,14 +110,14 @@ a {
     width: 144px;
 }
 
-.main-menu-catalog-item li:hover,
-.main-menu-catalog-item li:focus {
+.main-menu-catalog-item a:hover,
+.main-menu-catalog-item a:focus {
     background-color: #fbded7;
     border-radius: 5px;
 }
 
 
-.main-menu-catalog-item li:active {
+.main-menu-catalog-item a:active {
     background-color: #f6b5a5;
     border-radius: 5px;
 }
@@ -123,17 +131,24 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #323232;
-    margin-left: 20px;
+    padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
+.main-menu-catalog-item .new::after {
+  content: '';
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: #d1d0ce;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
 .main-menu-catalog-item .new {
-    display: block;
     box-sizing: border-box;
-    font-weight: 700;
-    border-bottom: 1px solid #cacac7;
-    margin-right: 12px;
+    font-weight: 700; 
 }
 
 .main-menu-item:hover .main-menu-catalog-item {
@@ -180,6 +195,7 @@ a {
     right: 1px;
     border-radius: 5px;
     z-index: 10;
+    top: 40px;
 }
 
 .search-popup input[type=search] {
@@ -230,6 +246,7 @@ a {
     background-color: #f8f7f4;
     border-radius: 5px;
     right: 1px;
+    top: 40px;
     z-index: 10;
 }
 .enter-popup input[type=email],
@@ -301,6 +318,18 @@ a {
     left: 17px;
 }
 
+.header-basket:hover::before,
+.header-basket:focus::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-basket-black.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 21px;
+    height: 20px;
+    left: 17px;
+}
+
 .header-basket-full::before {
     content: "";
     position: absolute;
@@ -340,6 +369,7 @@ a {
     z-index: 10;
     width: 521px;
     right: 1px;
+    top: 40px;
     background-color: #f8f7f4;
     border-radius: 5px;
     display: flex;
@@ -831,6 +861,7 @@ a {
     width: 300px;
     margin-bottom: 79px;
     vertical-align: middle;
+    text-decoration: underline;
 }
 
 .subscribe {
@@ -869,26 +900,38 @@ a {
     margin-left: 28px;
 }
 
-.map {
-    text-align:center 
+.contacts{
+    position: relative;
+    overflow: hidden;
 }
 
-.map img {
-    max-width: 100%;
+.contacts img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    max-height: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .adress-wrapper {
-    position: relative;
+    width: 1145px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 63px;
+    padding-bottom: 60px;
 }
 
 .address {
-    position: absolute;
     background-color: #fff;
     text-align: left;
     width: 303px;
     border-radius: 15px;
-    top: 63px;
-    right: 0px;
+    position: relative;
+    z-index: 10;
 }
 
 .address p {
@@ -898,8 +941,7 @@ a {
     width: 235px;
     margin: 0;
     margin-left: 25px;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .address a {
@@ -939,6 +981,10 @@ a {
 
 .footer-wrapper {
     display: flex;
+    margin-bottom: 25px;
+}
+
+.footer-footer-creamy {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -958,7 +1004,7 @@ a {
 .social-btn svg {
     border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 50px;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .social-btn svg:hover,
@@ -1280,8 +1326,15 @@ a {
     padding: 3px 8px;
 }
 
-.pagination li:last-child {
-    padding-right: 25px;
+.pagination li:nth-child(7) a {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.pagination li:first-child svg {
+    opacity: 0.2;
+    transform: rotate(180deg);
 }
 
 .pagination li {
