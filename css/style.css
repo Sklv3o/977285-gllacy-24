@@ -1,4 +1,6 @@
-
+* {
+    outline: 1px solid red;
+}
 
 body {
     margin: 0;
@@ -295,6 +297,26 @@ a {
     line-height: 24px;
     color: #999999;
 } 
+
+.search-popup input[type="search"]:hover,
+.enter-popup input[type="email"]:hover,
+.enter-popup input[type="password"]:hover,
+.subscribe-wrapper input[type="email"]:hover,
+.write-us-form input[type="text"]:hover,
+.write-us-form input[type="email"]:hover,
+.write-us-form textarea:hover {
+    border: 2px solid #c7c6c5;
+}
+
+.search-popup input[type="search"]:focus,
+.enter-popup input[type="email"]:focus,
+.enter-popup input[type="password"]:focus,
+.subscribe-wrapper input[type="email"]:focus,
+.write-us-form input[type="text"]:focus,
+.write-us-form input[type="email"]:focus,
+.write-us-form textarea:focus {
+    border: 2px solid #8fbdec;
+}
 
 .user-menu li:nth-child(2):hover .enter-popup {
     display: block;
@@ -936,6 +958,11 @@ a {
     text-decoration: underline;
 }
 
+.blog a:hover,
+.blog a:focus {
+    color: #e84d37;
+}
+
 .subscribe {
     width: 560px;
     background-color: #fff;
@@ -1196,8 +1223,8 @@ a {
     flex-direction: column;
 }
 
-.write-us-form input[type=text],
-.write-us-form input[type=email] {
+.write-us-form input[type="text"],
+.write-us-form input[type="email"] {
     margin-bottom: 20px;
     width: 267px;
     box-sizing: border-box;
@@ -1208,8 +1235,8 @@ a {
     height: 45px;
 }
 
-.write-us-form input[type=text]::placeholder,
-.write-us-form input[type=email]::placeholder {
+.write-us-form input[type="text"]::placeholder,
+.write-us-form input[type="email"]::placeholder {
     font-size: 16px;
     line-height: 24px;
     color: #999999;
@@ -1316,12 +1343,52 @@ a {
 .sort-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: px;
-    width: 200px;
+    width: 190px;
+    position: relative;
 }
 
-.sort-wrapper select {
-    margin-top: 12px;
+.sort-wrapper .select {
+    margin-top: 5px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    height: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.sort-wrapper::after {
+    content: "";
+    background-image: url(../img/icon-down-dir-w.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0, 0;
+    width: 11px;
+    height: 10px;
+    top: 35px;
+    right: 13px;
+}
+
+.sort-wrapper .select:hover {
+    color: #323232;
+}
+
+.sort-wrapper:hover::after {
+    content: "";
+    background-image: url(../img/icon-down-dir.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0, 0;
+    width: 11px;
+    height: 10px;
+    top: 35px;
+    right: 13px;
 }
 
 .fieldset {
@@ -1335,7 +1402,7 @@ a {
 }
 
 .price legend {
-    margin-left: 23px;
+    margin-left: 33px;
 }
 
 .fat {
@@ -1346,7 +1413,8 @@ a {
 }
 
 .fat legend {
-    margin-left: 17px;
+    margin-left: 30px;
+    margin-bottom: 5px;
 }
 
 .price-wrapper {
@@ -1356,7 +1424,7 @@ a {
     margin-top: 5px;
     padding-top: 18px;
     position: relative;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 5px;
     width: 220px;
     
@@ -1400,8 +1468,6 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     width: 413px;
-    margin-top: 6px;
-    margin-bottom: 4px;
     padding-bottom: 5px;
     margin-left: 17px;
     padding-top: 3px;
@@ -1418,9 +1484,14 @@ a {
     background-image: url("../img/icon-radio-off.svg");
     background-repeat: no-repeat;
     background-position: 0, 0;
-    padding: 3px 5px 3px 30px;
+    padding: 6px 5px 6px 30px;
     vertical-align: middle;
     cursor: pointer;
+    opacity: 0.8;
+}
+
+.fat-wrapper label:hover {
+    opacity: 1;
 }
 
 .radio-btn {
@@ -1465,6 +1536,11 @@ a {
     background-repeat: no-repeat;
     background-position: 0, 0;
     padding: 3px 5px 3px 30px;
+    opacity: 0.8;
+}
+
+.fillers-wrapper label:hover {
+    opacity: 1;
 }
 
 .check-btn {
