@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 1200px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: normal;
@@ -19,14 +19,14 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -37,6 +37,8 @@ a {
 .menu-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigation {
@@ -129,18 +131,16 @@ a {
     background-color: #f6b5a5;
 }
 
-.main-menu-catalog-item a:first-child:hover,
-.main-menu-catalog-item a:first-child:focus,
-.main-menu-catalog-item a:first-child:active {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.main-menu-catalog-item .new:hover,
+.main-menu-catalog-item .new:focus,
+.main-menu-catalog-item .new:active {
+    border-radius: 5px 5px 0px 0px;
 }
 
-.main-menu-catalog-item a:last-child:hover,
-.main-menu-catalog-item a:last-child:focus,
-.main-menu-catalog-item a:last-child:active {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.main-menu-catalog-item .melorin:hover,
+.main-menu-catalog-item .melorin:focus,
+.main-menu-catalog-item .melorin:active {
+    border-radius: 0px 0px 5px 5px;
 }
 
 .main-menu-catalog-item .main-menu-catalog-item-active {
@@ -158,7 +158,7 @@ a {
 }
 
 .main-menu-catalog-item .new::after {
-  content: '';
+  content: "";
   width: calc(100% - 20px);
   height: 1px;
   background-color: #d1d0ce;
@@ -219,7 +219,7 @@ a {
     top: 40px;
 }
 
-.search-popup input[type='search'] {
+.search-popup input[type="search"] {
     width: 310px;
     box-sizing: border-box;
     border: 2px solid #d3d3d2;
@@ -227,9 +227,11 @@ a {
     margin-bottom: 20px;
     border-radius: 5px;
     height: 45px;
+    padding-top: 8px;
+    padding-left: 10px;
 }
 
-.search-popup input[type='search']::placeholder {
+.search-popup input[type="search"]::placeholder {
     font-size: 14px;
     line-height: 24px;
     color: #999999;
@@ -246,7 +248,7 @@ a {
 }
 
 .saerch-btn:hover svg,
-.saerch-btn:focus svg{
+.saerch-btn:focus svg {
     fill: #000;
 }
 
@@ -270,22 +272,25 @@ a {
     top: 40px;
     z-index: 10;
 }
-.enter-popup input[type='email'],
-.enter-popup input[type='password'] {
+
+.enter-popup input[type="email"],
+.enter-popup input[type="password"] {
     width: 240px;
     margin: 20px;
     box-sizing: border-box;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
     height: 45px;
+    padding-top: 8px;
+    padding-left: 10px;
 }
 
-.enter-popup input[type='password'] {
+.enter-popup input[type="password"] {
     margin-top: 0;
 }
 
-.enter-popup input[type='email']::placeholder,
-.enter-popup input[type='password']::placeholder {
+.enter-popup input[type="email"]::placeholder,
+.enter-popup input[type="password"]::placeholder {
     font-size: 14px;
     line-height: 24px;
     color: #999999;
@@ -341,7 +346,7 @@ a {
 }
 
 .header-basket:hover::before,
-.header-basket:focus::before{
+.header-basket:focus::before {
     content: "";
     position: absolute;
     background-image: url("../img/icon-basket-black.svg");
@@ -475,6 +480,8 @@ a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+    position: relative;
+    top: -5px;
 }
 
 .header-contacts a {
@@ -744,6 +751,8 @@ a {
     text-align: center;
     font-weight: 500;
     margin-bottom: 13px;
+    z-index: 2;
+    position: relative;
 }
 
 .catalog-item .catalog-btn {
@@ -805,6 +814,7 @@ a {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 20px;
+    letter-spacing: 0.15px;
 }
 
 .about-list {
@@ -939,22 +949,24 @@ a {
     margin: 35px 15px 38px 28px;
 }
 
-.subscribe-wrapper input[type='email'] {
+.subscribe-wrapper input[type="email"] {
     box-sizing: border-box;
     width: 368px;
     height: 40px;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
+    padding-top: 6px;
+    padding-left: 10px;
 }
 
-.subscribe-wrapper input[type='email']::placeholder {
+.subscribe-wrapper input[type="email"]::placeholder {
     font-size: 16px;
     line-height: 24px;
     color: #999;
 }
 
 .subscribe-btn {
-    padding: 10px 23px;
+    padding: 10px 20px;
     margin-left: 10px;
 }
 
@@ -962,7 +974,7 @@ a {
     margin-left: 28px;
 }
 
-.contacts{
+.contacts {
     position: relative;
     overflow: hidden;
 }
@@ -972,6 +984,8 @@ a {
     min-height: 100%;
     max-width: none;
     max-height: none;
+    width: auto;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -990,7 +1004,7 @@ a {
 .address {
     background-color: #fff;
     text-align: left;
-    width: 303px;
+    width: 301px;
     border-radius: 15px;
     position: relative;
     z-index: 10;
@@ -1043,7 +1057,7 @@ a {
 
 .footer-wrapper {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .footer-footer-creamy {
@@ -1067,7 +1081,7 @@ a {
 .social-btn svg {
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 50px;
-    opacity: 0.6;
+    opacity: 0.8;
     fill: #fff;
 }
 
@@ -1115,12 +1129,17 @@ a {
     top: 2px;
 }
 
+.footer-menu li:nth-child(1),
+.footer-menu li:nth-child(2) {
+    margin-top: 5px;
+}
+
 .footer-menu li:nth-child(3) {
     margin-right: 17px;
 }
 
 .htmlacademy-info {
-    margin-top: 13px;
+    margin-top: 17px;
 }
 
 .htmlacademy-info p {
@@ -1184,11 +1203,31 @@ a {
     box-sizing: border-box;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
+    padding-top: 8px;
+    padding-left: 15px;
+    height: 45px;
+}
+
+.write-us-form input[type=text]::placeholder,
+.write-us-form input[type=email]::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
 }
 
 .write-us-form textarea {
-    width: 427px;
+    width: 410px;
     margin-bottom: 25px;
+    border: 2px solid #d3d3d2;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.write-us-form textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
 }
 
 .write-us-form .send-btn {
@@ -1239,12 +1278,12 @@ a {
 
 .breadcrumbs li {
     margin-top: 15px;
+    padding-right: 7px;
 }
 
 .breadcrumbs a {
     font-size: 14px;
     line-height: 16px;
-    padding-right: 20px;
 }
 
 .creamy-header {
@@ -1290,19 +1329,24 @@ a {
 }
 
 .price {
-    width: 200px;
+    width: 220px;
+    margin: 0;
+    padding: 0;
 }
 
 .price legend {
-    margin-left: 7px;
+    margin-left: 23px;
 }
 
 .fat {
     width: 410px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
 }
 
 .fat legend {
-    margin-left: 10px;
+    margin-left: 17px;
 }
 
 .price-wrapper {
@@ -1310,8 +1354,12 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     margin-top: 5px;
-    padding-top: 13px;
+    padding-top: 18px;
     position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 220px;
+    
 }
 
 .price-wrapper .toggle {
@@ -1321,17 +1369,17 @@ a {
     border-radius: 50px;
     background-color: #ababab;
     position: absolute;
-    top: 4px;
+    top: 8px;
     left: 0;
     cursor: pointer;
 }
 
 .price-wrapper .toggle-min {
-    left: 30px;
+    left: 40px;
 }
 
 .price-wrapper .toggle-max {
-    left: 132px;
+    left: 140px;
 }
 
 .price-wrapper .scale {
@@ -1351,9 +1399,11 @@ a {
 .fat-wrapper {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    margin-top: 4px;
+    width: 413px;
+    margin-top: 6px;
     margin-bottom: 4px;
     padding-bottom: 5px;
+    margin-left: 17px;
     padding-top: 3px;
     display: flex;
     justify-content: space-around;
@@ -1400,9 +1450,10 @@ a {
     margin-bottom: 4px;
     padding-bottom: 5px;
     padding-top: 3px;
-    width: 700px;
+    width: 690px;
     display: flex;
     justify-content: space-around;
+    margin-right: 12px;
 }
 
 .fillers-wrapper label {
@@ -1454,7 +1505,7 @@ a {
     display: flex;
     justify-content: flex-end;
     margin-top: 42px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
 }
 
 .pagination a {
