@@ -311,6 +311,7 @@ a {
 .write-us-form input[type="text"]:focus,
 .write-us-form input[type="email"]:focus,
 .write-us-form textarea:focus {
+    outline: none;
     border: 2px solid #8fbdec;
 }
 
@@ -338,6 +339,7 @@ a {
     line-height: 24px;
     color: #323232;
     background-color: #f8f7f4;
+    text-decoration: underline;
 }
 
 .header-enter-btn::before {
@@ -771,6 +773,7 @@ a {
     margin-bottom: 13px;
     z-index: 2;
     position: relative;
+    padding: 9 6px;
 }
 
 .catalog-item .catalog-btn {
@@ -1185,6 +1188,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    display: none;
 }
 
 .write-us-popup-wrapper {
@@ -1626,3 +1630,6 @@ a {
     border-radius: 50px;
 }
 
+.modal-show {
+  display: block;
+}
