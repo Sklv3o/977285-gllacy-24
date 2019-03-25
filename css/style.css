@@ -827,6 +827,7 @@ a {
     background-color: #eaddc4;
     background-image: url("../img/bg-waffle.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
     margin-bottom: 40px;
 }
@@ -936,6 +937,7 @@ a {
     background-color: #fff;
     background-repeat: no-repeat;
     background-image: url("../img/bg-blog-table-setting.jpg");
+    background-size: cover;
     border-radius: 15px;
 }
 
@@ -972,6 +974,7 @@ a {
     background-color: #fff;
     background-repeat: no-repeat;
     background-image: url("../img/bg-post.jpg");
+    background-size: cover;
     border-radius: 15px;
 }
 
