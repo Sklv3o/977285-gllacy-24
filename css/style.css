@@ -1583,6 +1583,10 @@ a {
     box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
+.modal-show {
+  display: block;
+}
+
 .pagination {
     list-style: none;
     margin: 0;
@@ -1639,6 +1643,4 @@ a {
     border-radius: 50px;
 }
 
-.modal-show {
-  display: block;
-}
+
